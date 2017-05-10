@@ -1,6 +1,55 @@
 var namespace = "http://www.w3.org/2000/svg"
 
 // Write your code here!
+var baseball
+var bat
+var mlb
+
+baseball = makeImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/520px-Baseball.svg.png", 20, 20, 20, 20)
+bat = makeImage("http://www.clipartbest.com/cliparts/nTB/ByX/nTBByX7rc.png", 40, 40, 50, 50)
+
+function moveStuff() {
+  var x = getX(baseball)
+  var x2 = getX(bat)
+  move(baseball, -1.5,0)
+  move(bat, -1.5,0)
+  if(x < -40){
+     setX(baseball, 300)
+  }if(x2 <-40){
+    setX(bat, 300)
+  }
+  requestAnimationFrame(moveStuff)
+}
+
+
+function One() {
+  document.querySelector("body").setAttribute("style", "background: url('https://www.ccuathletics.com/images/2015-16/baseball-pic.jpg')")
+  document.getElementById("title").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
+  document.getElementById("point1").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
+  document.getElementById("point2").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
+  document.getElementById("point3").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
+  makeImage("http://www.allstaractivities.com/sports/baseball/_derived/baseball-positions.htm_txt_BASEBALL%20FIELD.gif", 1, -45, 200, 200)
+  mlb = makeImage("http://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fmlb.png", 160, 75, 40, 40)
+
+}
+
+function Two() {
+  document.querySelector("body").setAttribute("style", "background: url('http://wallpaper.zone/img/4114009.jpg')")
+  document.getElementById("title").setAttribute("style", "color: Navy; font-family: Bungee Inline")
+  document.getElementById("point1").setAttribute("style", "color: Navy; font-family: Bungee Inline")
+  document.getElementById("point2").setAttribute("style", "color: Navy; font-family: Bungee Inline")
+  document.getElementById("point3").setAttribute("style", "color: Navy;font-family: Bungee Inline")
+  makeRect(1, 1, 1000, 1000, "white")
+  makeImage("https://www.seegoodthings.com/wp-content/uploads/2017/04/Best-Baseball-Batting-Gloves-Reviews.jpg", 0, 0, 100, 100)
+}
+function Three(){
+  document.querySelector("body").setAttribute("style", "background: url('https://i.ytimg.com/vi/TUUPIpuWDoo/maxresdefault.jpg')")
+    document.getElementById("title").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
+  document.getElementById("point1").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
+  document.getElementById("point2").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
+  document.getElementById("point3").setAttribute("style", "color: lightblue; font-family:")
+}
+
 
 // DO NOT EDIT CODE BELOW THIS LINE!
 function getX(shape) {
@@ -70,7 +119,7 @@ function setY(shape, y) {
     var yDiff = parseFloat(shape.getAttribute("y2")) - parseFloat(shape.getAttribute("y1"))
     shape.setAttribute("y1", y)
     shape.setAttribute("y2", y + yDiff)
-  } 
+  }
 }
 
 function move(shape, dx, dy) {
@@ -108,7 +157,7 @@ function makeCircle(cx, cy, r, fill, opacity) {
   circle.setAttribute("r", r)
   circle.setAttribute("fill", fill)
   circle.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(circle)
   return circle
@@ -122,7 +171,7 @@ function makeRect(x, y, width, height, fill, opacity) {
   rect.setAttribute("height", height)
   rect.setAttribute("fill", fill)
   rect.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(rect)
   return rect
@@ -136,7 +185,7 @@ function makeEllipse(cx, cy, rx, ry, fill, opacity) {
   ellipse.setAttribute("ry", ry)
   ellipse.setAttribute("fill", fill)
   ellipse.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(ellipse)
   return ellipse
@@ -151,7 +200,7 @@ function makeLine(x1, y1, x2, y2, stroke, strokeWidth, opacity) {
   line.setAttribute("stroke", stroke)
   line.setAttribute("stroke-width", strokeWidth)
   line.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(line)
   return line
@@ -164,7 +213,7 @@ function makePolyline(points, stroke, strokeWidth, opacity) {
   polyline.setAttribute("stroke-width", strokeWidth)
   polyline.setAttribute("opacity", opacity)
   polyline.setAttribute("fill", "none")
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(polyline)
   return polyline
@@ -175,7 +224,7 @@ function makePolygon(points, fill, opacity) {
   polygon.setAttribute("points", points)
   polygon.setAttribute("opacity", opacity)
   polygon.setAttribute("fill", fill)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(polygon)
   return polygon
@@ -190,7 +239,7 @@ function makeText(message, x, y, fontSize, fontFamily, fill, opacity) {
   text.setAttribute("font-family", fontFamily)
   text.setAttribute("fill", fill)
   text.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(text)
   return text
@@ -204,7 +253,7 @@ function makeImage(url, x, y, width, height, opacity) {
   image.setAttribute("width", width)
   image.setAttribute("height", height)
   image.setAttribute("opacity", opacity)
-  
+
   var canvas = document.getElementById("canvas")
   canvas.appendChild(image)
   return image
@@ -221,7 +270,7 @@ function collides(shape1, shape2) {
   } else {
     throw "Oops, that kind of shape isn't supported by the collide function!"
   }
-  
+
   var xMin, xMax, yMin, yMax
   if (shape2.hasAttribute("x")) {
     xMin = getX(shape2)
@@ -246,7 +295,7 @@ function collides(shape1, shape2) {
   } else {
     throw "Oops, that kind of shape isn't supported by the collide function!"
   }
-  return (centerX > xMin && 
+  return (centerX > xMin &&
           centerX < xMax &&
          centerY > yMin &&
          centerY < yMax)

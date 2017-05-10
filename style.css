@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Wendy+One');
+
+h1{
+  font-family: 'Wendy One', sans-serif;
+  color: navy;
+}
+
+body {
+  background-image: url(http://www.solidbackgrounds.com/images/1280x1024/1280x1024-light-blue-solid-color-background.jpg)
+}
