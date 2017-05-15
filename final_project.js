@@ -5,6 +5,7 @@ var baseball
 var bat
 var mlb
 
+
 baseball = makeImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/520px-Baseball.svg.png", 20, 20, 20, 20)
 bat = makeImage("http://www.clipartbest.com/cliparts/nTB/ByX/nTBByX7rc.png", 40, 40, 50, 50)
 
@@ -44,10 +45,28 @@ function Two() {
 }
 function Three(){
   document.querySelector("body").setAttribute("style", "background: url('https://i.ytimg.com/vi/TUUPIpuWDoo/maxresdefault.jpg')")
-    document.getElementById("title").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
-  document.getElementById("point1").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
-  document.getElementById("point2").setAttribute("style", "color: lightblue; font-family: Bungee+Inline")
-  document.getElementById("point3").setAttribute("style", "color: lightblue; font-family:")
+    document.getElementById("title").setAttribute("style", "color: midnightblue; font-family: 'Exo 2', sans-serif;")
+  document.getElementById("point1").setAttribute("style", "color: midnightblue; font-family: 'Exo 2', sans-serif;")
+  document.getElementById("point2").setAttribute("style", "color: midnightblue; font-family: 'Exo 2', sans-serif;")
+  document.getElementById("point3").setAttribute("style", "color: midnightblue; font-family: 'Exo 2', sans-serif;")
+
+
+  makeRect(1, 1, 1000, 1000, "white")
+  makeText("Major League Baseball teams.",10,10,10)
+  makeText("-LA Dodgers -LA Angels -Chicago Cubs",10,20,10)
+  makeText("-NY Yankees -Cleveland Indians",10,30,10)
+  makeText("-Detroit Tigers -Texas Rangers -NY Mets",10,40,10)
+  makeText("-Toronto Blue Jays -Boston Red Sox",10,50,10)
+  makeText("-St. Louis Cardinals -San Francisco Giants",10,60,10)
+  makeText("-Atlanta Braves -Baltimore Orioles",10,70,10)
+  makeText("-Pittsburgh Pirates -Houston Astros",10,80,10)
+  makeText("-Philadelphia Phillies -Kansas City Royals",10,90,10)
+  makeText("-Washington Nationals -Minnesota Twins",10,100,10)
+  makeText("-Seattle Mariners -Cincinnati Reds",10,110,10)
+  makeText("-Seattle Mariners -Cincinnati Reds",10,110,10)
+
+
+
 }
 
 
