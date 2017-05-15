@@ -63,7 +63,11 @@ function Three(){
   makeText("-Philadelphia Phillies -Kansas City Royals",10,90,10)
   makeText("-Washington Nationals -Minnesota Twins",10,100,10)
   makeText("-Seattle Mariners -Cincinnati Reds",10,110,10)
-  makeText("-Seattle Mariners -Cincinnati Reds",10,110,10)
+  makeText("-Miami Marlins -Chicago White Sox",10,120,10)
+  makeText("-Colorado Rockies -Arizona Diamondbacks",10,130,10)
+  makeText("-San Diego Padres -Oakland Athletics",10,140,10)
+  makeText("-Milwaukee Brewers",10,150,10)
+
 
 
 
