@@ -29,8 +29,9 @@ function One() {
   document.getElementById("point1").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
   document.getElementById("point2").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
   document.getElementById("point3").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
-  makeImage("http://www.allstaractivities.com/sports/baseball/_derived/baseball-positions.htm_txt_BASEBALL%20FIELD.gif", 1, -45, 200, 200)
-  mlb = makeImage("http://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fmlb.png", 160, 75, 40, 40)
+  makeRect(0,0,1000,1000,"white")
+  makeImage("http://www.allstaractivities.com/sports/baseball/_derived/baseball-positions.htm_txt_BASEBALL%20FIELD.gif", 0, -47, 200, 200)
+  mlb = makeImage("http://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fmlb.png", 160, 70, 40, 40)
 
 }
 
@@ -40,8 +41,8 @@ function Two() {
   document.getElementById("point1").setAttribute("style", "color: Navy; font-family: Bungee Inline")
   document.getElementById("point2").setAttribute("style", "color: Navy; font-family: Bungee Inline")
   document.getElementById("point3").setAttribute("style", "color: Navy;font-family: Bungee Inline")
-  makeRect(1, 1, 1000, 1000, "white")
-  makeImage("https://www.seegoodthings.com/wp-content/uploads/2017/04/Best-Baseball-Batting-Gloves-Reviews.jpg", 0, 0, 100, 100)
+  makeRect(0, 0, 1000, 1000, "white")
+  makeImage("https://www.seegoodthings.com/wp-content/uploads/2017/04/Best-Baseball-Batting-Gloves-Reviews.jpg", 40, 0, 100, 100)
 }
 function Three(){
   document.querySelector("body").setAttribute("style", "background: url('https://i.ytimg.com/vi/TUUPIpuWDoo/maxresdefault.jpg')")
@@ -51,7 +52,7 @@ function Three(){
   document.getElementById("point3").setAttribute("style", "color: midnightblue; font-family: 'Exo 2', sans-serif;")
 
 
-  makeRect(1, 1, 1000, 1000, "white")
+  makeRect(0, 0, 1000, 1000, "white")
   makeText("Major League Baseball teams.",10,10,10)
   makeText("-LA Dodgers -LA Angels -Chicago Cubs",10,20,10)
   makeText("-NY Yankees -Cleveland Indians",10,30,10)
@@ -66,7 +67,7 @@ function Three(){
   makeText("-Miami Marlins -Chicago White Sox",10,120,10)
   makeText("-Colorado Rockies -Arizona Diamondbacks",10,130,10)
   makeText("-San Diego Padres -Oakland Athletics",10,140,10)
-  makeText("-Milwaukee Brewers",10,150,10)
+  makeText("-Milwaukee Brewers -Tampa Bay Rays",10,150,10)
 
 
 
