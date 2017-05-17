@@ -25,13 +25,14 @@ function moveStuff() {
 
 function One() {
   document.querySelector("body").setAttribute("style", "background: url('https://www.ccuathletics.com/images/2015-16/baseball-pic.jpg')")
-  document.getElementById("title").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
-  document.getElementById("point1").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
-  document.getElementById("point2").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
-  document.getElementById("point3").setAttribute("style", "color: black; font-family: 'Wendy One', sans-serif;")
+  document.getElementById("title").setAttribute("style", "color: black; font-family: 'Candal', sans-serif;")
+  document.getElementById("point1").setAttribute("style", "color: black; font-family: 'Candal', sans-serif;")
+  document.getElementById("point2").setAttribute("style", "color: black; font-family: 'Candal', sans-serif;")
+  document.getElementById("point3").setAttribute("style", "color: black; font-family: 'Candal', sans-serif;")
   makeRect(0,0,1000,1000,"white")
   makeImage("http://www.allstaractivities.com/sports/baseball/_derived/baseball-positions.htm_txt_BASEBALL%20FIELD.gif", 0, -47, 200, 200)
   mlb = makeImage("http://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fmlb.png", 160, 70, 40, 40)
+  
 
 }
 
