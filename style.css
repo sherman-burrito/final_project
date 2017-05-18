@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 @import url('https://fonts.googleapis.com/css?family=Boogaloo');
 @import url('https://fonts.googleapis.com/css?family=Changa+One');
-
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
 
 h1{
   font-family: 'Changa One', cursive;
@@ -20,6 +20,16 @@ body {
 
 div{
   background-color: white;
-  width: 150px;
+  width: 180px;
   border: 3px black dashed;
+}
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }

@@ -5,7 +5,7 @@ var baseball
 var bat
 var mlb
 
-
+makeRect(0,0,1000,1000,"darkslategrey")
 baseball = makeImage("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Baseball.svg/520px-Baseball.svg.png", 20, 20, 20, 20)
 bat = makeImage("http://www.clipartbest.com/cliparts/nTB/ByX/nTBByX7rc.png", 40, 40, 50, 50)
 
@@ -32,17 +32,17 @@ function One() {
   makeRect(0,0,1000,1000,"white")
   makeImage("http://www.allstaractivities.com/sports/baseball/_derived/baseball-positions.htm_txt_BASEBALL%20FIELD.gif", 0, -47, 200, 200)
   mlb = makeImage("http://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fmlb.png", 160, 70, 40, 40)
-  
+
 
 }
 
 function Two() {
   document.querySelector("body").setAttribute("style", "background: url('http://wallpaper.zone/img/4114009.jpg')")
-  document.getElementById("title").setAttribute("style", "color: Navy; font-family: Bungee Inline")
-  document.getElementById("point1").setAttribute("style", "color: Navy; font-family: Bungee Inline")
-  document.getElementById("point2").setAttribute("style", "color: Navy; font-family: Bungee Inline")
-  document.getElementById("point3").setAttribute("style", "color: Navy;font-family: Bungee Inline")
-  makeRect(0, 0, 1000, 1000, "white")
+  document.getElementById("title").setAttribute("style", "color: Indigo; font-family: 'Carter One', cursive;")
+  document.getElementById("point1").setAttribute("style", "color: Indigo; font-family: 'Carter One', cursive;")
+  document.getElementById("point2").setAttribute("style", "color: Indigo; font-family: 'Carter One', cursive;")
+  document.getElementById("point3").setAttribute("style", "color: Indigo;font-family: 'Carter One', cursive;")
+  makeRect(0, 0, 1000, 1000, "indigo")
   makeImage("https://www.seegoodthings.com/wp-content/uploads/2017/04/Best-Baseball-Batting-Gloves-Reviews.jpg", 40, 0, 100, 100)
 }
 function Three(){
@@ -51,24 +51,22 @@ function Three(){
   document.getElementById("point1").setAttribute("style", "color: midnightblue; font-family: 'Boogaloo', cursive;")
   document.getElementById("point2").setAttribute("style", "color: midnightblue; font-family: 'Boogaloo', cursive;")
   document.getElementById("point3").setAttribute("style", "color: midnightblue; font-family: 'Boogaloo', cursive;")
-
-
-  makeRect(0, 0, 1000, 1000, "white")
-  makeText("Major League Baseball Teams",10,10,10,'Boogaloo')
-  makeText("-LA Dodgers -LA Angels -Chicago Cubs",10,20,10,'Boogaloo')
-  makeText("-NY Yankees -Cleveland Indians",10,30,10,'Boogaloo')
-  makeText("-Detroit Tigers -Texas Rangers -NY Mets",10,40,10,'Boogaloo')
-  makeText("-Toronto Blue Jays -Boston Red Sox",10,50,10,'Boogaloo')
-  makeText("-St. Louis Cardinals -San Francisco Giants",10,60,10,'Boogaloo')
-  makeText("-Atlanta Braves -Baltimore Orioles",10,70,10,'Boogaloo')
-  makeText("-Pittsburgh Pirates -Houston Astros",10,80,10,'Boogaloo')
-  makeText("-Philadelphia Phillies -Kansas City Royals",10,90,10,'Boogaloo')
-  makeText("-Washington Nationals -Minnesota Twins",10,100,10,'Boogaloo')
-  makeText("-Seattle Mariners -Cincinnati Reds",10,110,10,'Boogaloo')
-  makeText("-Miami Marlins -Chicago White Sox",10,120,10,'Boogaloo')
-  makeText("-Colorado Rockies -Arizona Diamondbacks",10,130,10,'Boogaloo')
-  makeText("-San Diego Padres -Oakland Athletics",10,140,10,'Boogaloo')
-  makeText("-Milwaukee Brewers -Tampa Bay Rays",10,150,10,'Boogaloo')
+  makeRect(0, 0, 1000, 1000, "midnightblue")
+  makeText("Major League Baseball Teams",10,10,10,'Boogaloo','white')
+  makeText("-LA Dodgers -LA Angels -Chicago Cubs",10,20,10,'Boogaloo','white')
+  makeText("-NY Yankees -Cleveland Indians",10,30,10,'Boogaloo','white')
+  makeText("-Detroit Tigers -Texas Rangers -NY Mets",10,40,10,'Boogaloo','white')
+  makeText("-Toronto Blue Jays -Boston Red Sox",10,50,10,'Boogaloo','white')
+  makeText("-St. Louis Cardinals -San Francisco Giants",10,60,10,'Boogaloo','white')
+  makeText("-Atlanta Braves -Baltimore Orioles",10,70,10,'Boogaloo','white')
+  makeText("-Pittsburgh Pirates -Houston Astros",10,80,10,'Boogaloo','white')
+  makeText("-Philadelphia Phillies -Kansas City Royals",10,90,10,'Boogaloo','white')
+  makeText("-Washington Nationals -Minnesota Twins",10,100,10,'Boogaloo','white')
+  makeText("-Seattle Mariners -Cincinnati Reds",10,110,10,'Boogaloo','white')
+  makeText("-Miami Marlins -Chicago White Sox",10,120,10,'Boogaloo','white')
+  makeText("-Colorado Rockies -Arizona Diamondbacks",10,130,10,'Boogaloo','white')
+  makeText("-San Diego Padres -Oakland Athletics",10,140,10,'Boogaloo','white')
+  makeText("-Milwaukee Brewers -Tampa Bay Rays",10,150,10,'Boogaloo','white')
 
 
 
